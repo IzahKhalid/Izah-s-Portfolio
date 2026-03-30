@@ -1,9 +1,313 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello, my site is working!</h1>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Izah's Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #3a2b2f, #1e1b2e);
+  color: #f5e9e2;
+  padding-top: 70px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 27, 46, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f5e9e2;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f3a6b1;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #d6c6c6;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(45deg, #f3a6b1, #d89bb3);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-img img {
+  width: 230px;
+  border-radius: 20px;
+  border: 6px solid #e8c6d0;
+}
+
+/* ABOUT */
+.about-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #2b2233;
+  padding: 8px 15px;
+  margin: 6px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  background: #8b6f85;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background: #3a2b2f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
+}
+
+/* EXPERIENCE */
+.timeline {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.timeline div {
+  margin-bottom: 25px;
+}
+
+/* CONTACT */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact button {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: #2a1d24;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">IKI ✨</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1><pre>Hey there, I'm Izah Khalid</pre></h1>
+    <p>I’m a passionate web developer who loves creating clean, user-friendly digital experiences.
+       I enjoy turning ideas into responsive, visually appealing websites using modern technologies.
+       Always learning and evolving, I strive to build designs that are both functional and meaningful.
+    </p>
+    <button class="btn" onclick="location.href='#projects'">Discover My Creations</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="c:\Users\IZAH\OneDrive\Pictures\Gradient background .png" alt="profile">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-cards">
+    <div class="card">
+      <h3>🌼 Who I Am</h3>
+      <p>A calm creative soul who loves designing meaningful interfaces.</p>
+    </div>
+    <div class="card">
+      <h3>💻 What I Love</h3>
+      <p>Building aesthetic, user-friendly digital experiences.</p>
+    </div>
+    <div class="card">
+      <h3>✨ Sunlight Side</h3>
+      <p>I nurture ideas and turn them into beautiful products.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <p>My toolkit</p>
+  <div>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Git</span>
+    <span>C++</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project">
+      <h3>🩶 Website</h3>
+      <p>A neutral coloured About Us page.</p>
+      <button class="btn"><a href="c:\Users\IZAH\OneDrive\Documents\HTML Files\index.html">Visit</a></button>
+    </div>
+    <div class="project">
+      <h3>🖥️ Sign In</h3>
+      <p>An interactive Sign In page with a responsive interface.</p>
+      <button class="btn"><a href="c:\Users\IZAH\OneDrive\Documents\HTML Project\signin.html">Visit</a></button>
+    </div>
+    <div class="project">
+      <h3>🌸 Story</h3>
+      <p>Soft aesthetic storytelling page.</p>
+      <button class="btn"><a href="c:\Users\IZAH\OneDrive\Desktop\BQ(Assignments)\BQassignment1.html">Visit</a></button>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div>
+      <h3>Web Designing Student</h3>
+      <p>2025</p>
+      <p>Improved UI and responsiveness.</p>
+    </div>
+    <div>
+      <h3>Personal Projects</h3>
+      <p>Ongoing</p>
+      <p>Exploring Wordpress and VS Code.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Let's Bloom Together 🌷</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea rows="4" placeholder="Your Message"></textarea>
+  <button class="btn"><a href="mailto:izahkhalid2k@gmail.com" class="btn">Send Message</a></button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Made with VS Code by Izah Khalid | 2026
+</footer>
+
+</body>
 </html>
